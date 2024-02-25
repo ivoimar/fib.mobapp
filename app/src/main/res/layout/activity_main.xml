@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".AndroidActivity" android:id="@+id/android">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:fitsSystemWindows="true"
+            android:id="@+id/appBarLayout" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0">
+
+        <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" tools:src="@tools:sample/backgrounds/scenic"
+                android:id="@+id/imageView3" android:clickable="true" android:contextClickable="true"/>
+        <ImageButton
+                android:src="@android:drawable/ic_media_ff"
+                android:layout_width="match_parent"
+                android:layout_height="62dp" android:id="@+id/NextPage" android:soundEffectsEnabled="true"
+                android:contextClickable="true" android:clickable="true" android:scaleType="center"
+                android:onClick="@+id/NextPage"/>
+
+        <Button
+                android:id="@+id/nextPageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Next Page" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ImageView
+            android:layout_width="60dp"
+            android:layout_height="46dp" app:srcCompat="@android:mipmap/sym_def_app_icon"
+            android:id="@+id/imageView" tools:layout_editor_absoluteY="16dp" tools:layout_editor_absoluteX="16dp"/>
+    <Button
+            android:text="Тарифа"
+            android:layout_width="150dp"
+            android:layout_height="73dp" android:id="@+id/button2" tools:layout_editor_absoluteY="334dp"
+            android:textColorHighlight="#EDEDF1" android:textColorLink="#3F51B5"
+            android:textSize="16sp" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:clickable="true" android:checkable="true" android:contextClickable="true"
+            android:onClick="openUrl"/>
+    <Button
+            android:text="Бюлетин лихви"
+            android:layout_width="150dp"
+            android:layout_height="73dp" android:id="@+id/button4" tools:layout_editor_absoluteY="475dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:contextClickable="true" android:clickable="true"
+            android:onClick="openUrl"/>
+    <Button
+            android:text=" Tariff"
+            android:layout_width="150dp"
+            android:layout_height="73dp" android:id="@+id/EN" tools:layout_editor_absoluteY="334dp"
+            android:textSize="16sp" android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:clickable="true" android:checkable="true" android:contextClickable="true"
+            android:onClick="openUrl"/>
+    <Button
+            android:text="Interest Bulletin"
+            android:layout_width="150dp"
+            android:layout_height="73dp" android:id="@+id/button5" tools:layout_editor_absoluteY="475dp"
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent" android:textSize="16sp"
+            android:checkable="true" android:clickable="true" android:contextClickable="true"
+            android:onClick="openUrl"/>
+    <ImageView
+            android:layout_width="409dp"
+            android:layout_height="90dp" app:srcCompat="@drawable/Fibanklogo" android:id="@+id/imageView2"
+            tools:layout_editor_absoluteY="123dp" tools:layout_editor_absoluteX="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
